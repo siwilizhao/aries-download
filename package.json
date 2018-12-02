@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "aries-logger": "^1.0.4",
+    "bluebird": "^3.5.3",
+    "got": "^9.3.2",
+    "ioredis": "^4.2.0",
+    "siwi-md5": "^1.0.2",
+    "siwi-mkdirs": "^1.0.0",
+    "siwi-uniquestring": "^1.0.4",
+    "siwi-wait": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin test"
+  }
+}

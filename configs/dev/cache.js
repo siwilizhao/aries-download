@@ -1,0 +1,3 @@
+module.exports = {
+    AXIES_DOWNLOAD_LIST_QUENE: 'AXIES_DOWNLOAD_LIST_QUENE'
+}
