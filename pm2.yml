@@ -1,0 +1,10 @@
+apps:
+  - script   : ./business/video.js
+    name     : "aries-download-video",
+    instances: 1
+    exec_mode: cluster
+    watch  : true
+    env    :
+      NODE_ENV: dev
+    env_production:
+      NODE_ENV: prod
