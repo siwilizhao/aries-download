@@ -9,5 +9,6 @@
         "save_name": "node-v10.14.1.pkg",
         "file_type": "file",
     }
-    await services.redis.lpush('AXIES_DOWNLOAD_VIDEO_QUENE', JSON.stringify(task))
+    const res = await services.redis.lpush('ARIES_DOWNLOAD_VIDEO_QUENE', JSON.stringify(task))
+    console.log(res)
 })()

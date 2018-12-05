@@ -1,12 +1,12 @@
 const services = require('../index')
-const {AXIES_DOWNLOAD_VIDEO_QUENE} = services.configs.cache
+const {ARIES_DOWNLOAD_VIDEO_QUENE} = services.configs.cache
 const downloader = require('./downloader').request
 class Downloader {
     constructor() {
     
     }
     async handler () {
-        const taskJsonString = await services.redis.rpop(AXIES_DOWNLOAD_VIDEO_QUENE)
+        const taskJsonString = await services.redis.rpop(ARIES_DOWNLOAD_VIDEO_QUENE)
         if (!taskJsonString) {
             console.log(`no task wait`)
             return false
