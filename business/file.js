@@ -1,12 +1,12 @@
 const services = require('../index')
-const {AXIES_DOWNLOAD_FILE_QUENE} = services.configs.cache
+const {AXIES_DOWNLOAD_FILE_QUEUE} = services.configs.cache
 const downloader = require('./downloader').request
 class Downloader {
     constructor() {
     
     }
     async handler () {
-        const taskJsonString = await services.redis.rpop(AXIES_DOWNLOAD_FILE_QUENE)
+        const taskJsonString = await services.redis.rpop(AXIES_DOWNLOAD_FILE_QUEUE)
         if (!taskJsonString) {
             console.log(`no task wait`)
             return false
